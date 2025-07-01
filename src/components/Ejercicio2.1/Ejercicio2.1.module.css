@@ -1,0 +1,61 @@
+.tarjeta {
+    max-width: 400px;
+    margin: auto;
+    padding: 2rem 1.5rem;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 10px 34px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #000000;
+}
+
+.nombre {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.25em;
+    color: #2a72d4;
+    letter-spacing: 1px;
+}
+
+.titulo {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 1em;
+}
+
+.descripcion {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 1.5em;
+}
+
+.lista {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5em 0;
+}
+
+.item {
+    font-size: 0.98rem;
+    margin-bottom: 0.5em;
+    color: #333;
+    padding-left: 1.2em;
+    position: relative;
+}
+
+.item::before {
+    content: "•";
+    color: #2a72d4;
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+    line-height: 1;
+}
+
+.footer {
+    text-align: right;
+    color: #aaa;
+    font-size: 0.85rem;
+    margin-top: 1em;
+}

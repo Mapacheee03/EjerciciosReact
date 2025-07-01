@@ -1,0 +1,104 @@
+.blogContainer {
+    width: 90%;
+    margin: 20px auto;
+    padding: 32px 20px;
+    background: #f9fafb;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.blogTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1e293b;
+    margin-bottom: 36px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.post {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    margin-bottom: 40px;
+    padding: 28px 22px 18px 22px;
+    transition: box-shadow 0.2s;
+    border: 1px solid #e2e8f0;
+}
+
+.post:hover {
+    box-shadow: 0 6px 24px rgba(0,0,0,0.10);
+}
+
+.postHeader {
+    border-bottom: 1px solid #006eff;
+    margin-bottom: 18px;
+    padding-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.postTitle {
+    font-size: 1.7rem;
+    color: #0f172a;
+    margin: 0;
+    font-weight: 600;
+}
+
+.authorInfo {
+    color: #14b8a6;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.postContent {
+    font-size: 1.15rem;
+    color: #334155;
+    margin-bottom: 18px;
+    line-height: 1.7;
+}
+
+.postFooter {
+    border-top: 1px solid #006eff;
+    margin-top: 18px;
+    padding-top: 10px;
+}
+
+.commentsTitle {
+    font-size: 1.1rem;
+    color: #64748b;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.comment {
+    margin-left: 0;
+    margin-bottom: 10px;
+    padding: 10px 14px;
+    background: #f1f5f9;
+    border-radius: 8px;
+    border-left: 4px solid #14b8a6;
+}
+
+.commentText {
+    margin: 0 0 4px 0;
+    color: #334155;
+}
+
+.commentAuthor {
+    color: #0ea5e9;
+    font-size: 0.98rem;
+    font-weight: 500;
+}
+
+@media (max-width: 800px) {
+    .blogContainer {
+        max-width: 98vw;
+        padding: 16px 4vw;
+    }
+    .post {
+        padding: 18px 8px 12px 8px;
+    }
+}

@@ -1,0 +1,88 @@
+.portafolioContainer {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 32px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 6px 32px rgba(0, 0, 0, 0.10);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.titulo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 24px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.seccion {
+    margin-bottom: 36px;
+}
+
+.seccionTitulo {
+    font-size: 1.5rem;
+    color: #3182ce;
+    margin-bottom: 18px;
+    border-left: 4px solid #3182ce;
+    padding-left: 12px;
+    font-weight: 600;
+}
+
+.proyectoCard {
+    background: #e5e9ec;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(49, 130, 206, 0.08);
+    padding: 20px 24px;
+    margin-bottom: 18px;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.proyectoCard:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 6px 20px rgba(49, 130, 206, 0.13);
+}
+
+.proyectoNombre {
+    font-size: 1.2rem;
+    color: #2b6cb0;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.proyectoTecnologia {
+    font-size: 1rem;
+    color: #4a5568;
+    margin-bottom: 4px;
+}
+
+.proyectoDescripcion {
+    font-size: 1rem;
+    color: #4a5568;
+
+}
+
+.habilidadesLista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.habilidadItem {
+    background: linear-gradient(90deg, #3182ce 60%, #63b3ed 100%);
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 1px 4px rgba(49, 130, 206, 0.10);
+    transition: background 0.2s;
+}
+
+.habilidadItem:hover {
+    background: linear-gradient(90deg, #2b6cb0 60%, #4299e1 100%);
+}

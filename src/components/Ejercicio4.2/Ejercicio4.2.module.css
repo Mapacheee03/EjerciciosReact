@@ -1,0 +1,81 @@
+.menuContainer {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 32px 24px;
+    background: #fffdfa;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    color: #2d2d2d;
+}
+
+.restaurantInfo {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.restaurantInfo h1 {
+    font-size: 2.5rem;
+    color: #386fb8;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.restaurantInfo p {
+    margin: 4px 0;
+    font-size: 1.1rem;
+}
+
+.menuSection {
+    margin-bottom: 32px;
+}
+
+.menuSection h2 {
+    font-size: 1.6rem;
+    color: #3874b8;
+    border-bottom: 2px solid #737cf7;
+    padding-bottom: 6px;
+    margin-bottom: 18px;
+    letter-spacing: 0.5px;
+}
+
+.menuItem {
+    background: #fff5e9;
+    border-radius: 10px;
+    padding: 18px 16px 12px 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 4px rgba(184,92,56,0.06);
+    transition: box-shadow 0.2s;
+}
+
+.menuItem:hover {
+    box-shadow: 0 4px 16px rgba(184,92,56,0.13);
+}
+
+.menuItem h4 {
+    font-size: 1.15rem;
+    margin: 0 0 4px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #7c3a1d;
+}
+
+.menuItem h4 span {
+    font-size: 1rem;
+    color: #834026;
+    background: #f7c873;
+    border-radius: 6px;
+    padding: 2px 10px;
+    margin-left: 10px;
+}
+
+.menuItem p {
+    margin: 0 0 6px 0;
+    color: #444;
+}
+
+.menuItem small {
+    color: #7c3a1d;
+    font-size: 0.97rem;
+}

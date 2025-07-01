@@ -1,0 +1,40 @@
+.container {
+    max-width: 400px;
+    padding: 32px 24px;
+    margin: auto;
+    background: #f8fafc;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.titulo {
+    color: #2563eb;
+    font-size: 2rem;
+    margin-bottom: 16px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.info {
+    font-size: 1.1rem;
+    margin: 8px 0;
+    color: #22223b;
+}
+
+.lista {
+    margin: 8px 0 16px 24px;
+    padding-left: 16px;
+}
+
+.lista li {
+    margin-bottom: 4px;
+    color: #3a5a40;
+}
+
+.fecha {
+    font-size: 0.98rem;
+    color: #64748b;
+    margin-top: 18px;
+    text-align: right;
+}
