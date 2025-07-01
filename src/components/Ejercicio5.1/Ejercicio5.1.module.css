@@ -1,0 +1,42 @@
+.employeeCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+    background: #f4f6fa;
+    min-height: 100vh;
+}
+
+.employeeCard {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    padding: 2rem 1.5rem;
+    width: 300px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.employeeCard:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.employeeCard h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+    color: #2a3b4c;
+}
+
+.employeeCard p {
+    margin: 0.3rem 0;
+    color: #4a5568;
+    font-size: 1rem;
+}
+
+.employeeCard strong {
+    color: #1a202c;
+}

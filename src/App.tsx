@@ -10,6 +10,8 @@ import GeneradordeHTML from './components/Ejercicio3.1/Ejercicio3.1';
 import ProcesadorDeDatosComplejos from './components/Ejercicio3.2/Ejercicio3.2';
 import GaleriaDeFotos from './components/Ejercicio4.1/Ejercicio4.1';
 import MenuDeRestaurante from './components/Ejercicio4.2/Ejercicio4.2';
+import TarjetasDeEmpleados from './components/Ejercicio5.1/Ejercicio5.1';
+import TiendaDeProductos from './components/Ejercicio5.2/Ejercicio5.2';
 
 import './App.css';
 
@@ -28,6 +30,8 @@ function App() {
         <Route path="/procesador" element={<ProcesadorDeDatosComplejos />} />
         <Route path="/galeria" element={<GaleriaDeFotos />} />
         <Route path="/menu" element={<MenuDeRestaurante />} />
+        <Route path="/empleados" element={<TarjetasDeEmpleados />} />
+        <Route path="/tienda" element={<TiendaDeProductos />} />
 
       </Routes>
   );

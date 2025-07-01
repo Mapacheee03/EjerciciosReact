@@ -49,6 +49,15 @@ function HomePage() {
           <Link className={styles['exercise-link']} to="/menu">Ejercicio 4.2: Menú de Restaurante</Link>
         </li>
       </ul>
+         <h3 className={styles.subtitle}>Tema 5: Props - Pasar Datos a Componentes</h3>
+        <ul className={styles['exercise-list']}>
+        <li className={styles['exercise-item']}>
+          <Link className={styles['exercise-link']} to="/empleados">Ejercicio 5.1: Tarjetas De Empleados </Link>
+        </li>
+        <li className={styles['exercise-item']}>
+          <Link className={styles['exercise-link']} to="/tienda">Ejercicio 5.2: Tienda De Productos</Link>
+        </li>
+      </ul>
     </div>
   );
 }
