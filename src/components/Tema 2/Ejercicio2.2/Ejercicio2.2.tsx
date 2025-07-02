@@ -1,4 +1,5 @@
 import styles from "./Ejercicio2.2.module.css";
+import { useNavigate } from "react-router-dom";
 
 const proyectos = [
     { nombre: "Evaluación Docente", tecnologia: "Angular + Node.js + PostgresSQL ", descripcion: "Sistema web que permite a los alumnos evaluar de forma anónima el desempeño de sus docentes, generando reportes en tiempo real para la mejora continua." },
@@ -8,8 +9,13 @@ const proyectos = [
 const habilidades = ["TypeScript", "React", "Node.js", "CSS", "Git", "PostgresSQL", "Express"];
 
 function PortafolioModular() {
+    const navigate = useNavigate();
+
     return (
-        <div className={styles.portafolioContainer}>          
+        <div className={styles.portafolioContainer}>
+            <button onClick={() => navigate("/")} className={styles.backButton}>
+                Regresar
+            </button>
             <h1 className={styles.titulo}>Mi Portafolio</h1>
             <div id="proyectos" className={styles.seccion}>
                 <h2 className={styles.seccionTitulo}>Proyectos</h2>
@@ -29,7 +35,7 @@ function PortafolioModular() {
                     ))}
                 </ul>
             </div>
-            
+
         </div>
     );
 }

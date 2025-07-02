@@ -1,6 +1,9 @@
-import styles from './Ejercicio2.1.module.css';
+import styles from './Ejercicio2.1.module.css'
+import { useNavigate } from "react-router-dom";
+
 
 export default function TarjetaDePresentacion() {
+    const navigate = useNavigate();
     const nombreCompleto = "Orlando Grajeda";
     const tituloProfesional = "Desarrollador FrontEnd";
     const descripcionPersonal = "Desarrollador apasionado con 1 año de experiencia en Angular y Node.js";
@@ -9,7 +12,11 @@ export default function TarjetaDePresentacion() {
     const ubicacion = "Pueblo Yaqui, Son";
 
     return (
+
         <div className={styles.tarjeta}>
+            <button onClick={() => navigate("/")} className={styles.backButton}>
+                Regresar
+            </button>
             <h1 className={styles.nombre}>{nombreCompleto}</h1>
             <h2 className={styles.titulo}>{tituloProfesional}</h2>
             <p className={styles.descripcion}>{descripcionPersonal}</p>

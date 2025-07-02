@@ -1,4 +1,6 @@
 import styles from './Ejercicio2.3.module.css';
+import { useNavigate } from "react-router-dom";
+
 
 function AuthorBadge({ name }: { name: string }) {
     return <span className={styles.authorBadge}> {name}</span>;
@@ -105,5 +107,15 @@ function Blog() {
 }
 
 export default function SistemadeComponentesAnidados() {
-    return <Blog />;
+    const navigate = useNavigate();
+
+    return (
+        <>
+            <button onClick={() => navigate("/")} className={styles.backButton}>
+                Regresar
+            </button>
+            <Blog />
+
+        </>
+    );
 }

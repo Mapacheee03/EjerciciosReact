@@ -1,4 +1,5 @@
 import styles from "./Ejercicio5.1.module.css";
+import { useNavigate } from "react-router-dom";
 
 type EmployeeCardProps = {
     nombre: string;
@@ -30,17 +31,24 @@ const empleados = [
 ];
 
 export default function TarjetasDeEmpleados() {
+    const navigate = useNavigate();
+
     return (
-        <div className={styles.employeeCardsContainer}>
-            {empleados.map((empleado, index) => (
-                <EmployeeCard
-                    key={index}
-                    nombre={empleado.nombre}
-                    puesto={empleado.puesto}
-                    edad={empleado.edad}
-                    salarioMensual={empleado.salarioMensual}
-                />
-            ))}
-        </div>
+        <>
+            <button onClick={() => navigate("/")} className={styles.backButton}>
+                Regresar
+            </button>
+            <div className={styles.employeeCardsContainer}>
+                {empleados.map((empleado, index) => (
+                    <EmployeeCard
+                        key={index}
+                        nombre={empleado.nombre}
+                        puesto={empleado.puesto}
+                        edad={empleado.edad}
+                        salarioMensual={empleado.salarioMensual}
+                    />
+                ))}
+            </div>
+        </>
     );
 }

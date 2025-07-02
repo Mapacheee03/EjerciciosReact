@@ -1,4 +1,6 @@
 import style from './Ejercicio4.2.module.css'
+import { useNavigate } from "react-router-dom";
+
 
 const nombreRestaurante = "La Cocina de María"
 const descripcionRestaurante = "Cocina tradicional española con toque moderno"
@@ -71,8 +73,13 @@ function MenuSection({ titulo, items }: MenuSectionProps) {
 }
 
 export default function MenuDeRestaurante() {
+    const navigate = useNavigate();
+
     return (
         <div className={style.menuContainer}>
+            <button onClick={() => navigate("/")} className={style.backButton}>
+                Regresar
+            </button>
             <RestaurantInfo />
             <MenuSection titulo="Entrantes" items={entrantes} />
             <MenuSection titulo="Platos Principales" items={principales} />

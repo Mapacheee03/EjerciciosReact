@@ -1,4 +1,6 @@
 import style from "./Ejercicio4.1.module.css";
+import { useNavigate } from "react-router-dom";
+
 
 type Foto = {
     titulo: string;
@@ -61,8 +63,13 @@ function PhotoCard({ titulo, descripcion, ubicacion, etiquetas }: PhotoCardProps
 }
 
 export default function GaleriaDeFotos() {
+    const navigate = useNavigate();
+
     return (
         <div className={style.galeriaContainer}>
+            <button onClick={() => navigate("/")} className={style.backButton}>
+                Regresar
+            </button>
             <GalleryHeader titulo={tituloGaleria} subtitulo={subtituloGaleria} />
             <div className={style.galeriaGrid}>
                 {fotos.map((foto, idx) => (

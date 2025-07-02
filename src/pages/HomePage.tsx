@@ -39,6 +39,9 @@ function HomePage() {
         <li className={styles['exercise-item']}>
           <Link className={styles['exercise-link']} to="/procesador">Ejercicio 3.2: Procesador de Datos Complejos</Link>
         </li>
+        <li className={styles['exercise-item']}>
+          <Link className={styles['exercise-link']} to="/render">⭐Ejercicio 3.3: RenderizadorCondicional</Link>
+        </li>
       </ul>
        <h3 className={styles.subtitle}>Tema 4: Componentes Múltiples</h3>
         <ul className={styles['exercise-list']}>
@@ -48,6 +51,9 @@ function HomePage() {
         <li className={styles['exercise-item']}>
           <Link className={styles['exercise-link']} to="/menu">Ejercicio 4.2: Menú de Restaurante</Link>
         </li>
+        <li className={styles['exercise-item']}>
+          <Link className={styles['exercise-link']} to="/cursos">⭐Ejercicio 4.3: Plataforma de Cursos Online</Link>
+        </li>
       </ul>
          <h3 className={styles.subtitle}>Tema 5: Props - Pasar Datos a Componentes</h3>
         <ul className={styles['exercise-list']}>
@@ -56,6 +62,9 @@ function HomePage() {
         </li>
         <li className={styles['exercise-item']}>
           <Link className={styles['exercise-link']} to="/tienda">Ejercicio 5.2: Tienda De Productos</Link>
+        </li>
+        <li className={styles['exercise-item']}>
+          <Link className={styles['exercise-link']} to="/gestion">⭐Ejercicio 5.3: Sistema de Gestión Escolar</Link>
         </li>
       </ul>
     </div>

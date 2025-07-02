@@ -1,4 +1,6 @@
 import styles from './Ejercicio3.2.module.css';
+import { useNavigate } from "react-router-dom";
+
 
 const libros = [
     { titulo: "Cien años de soledad", autor: "Gabriel García Márquez", paginas: 417, genero: "Realismo mágico" },
@@ -10,6 +12,8 @@ const libros = [
 ];
 
 export default function ProcesadorDeDatosComplejos() {
+    const navigate = useNavigate();
+
     const totalPaginas = libros.reduce((acc, libro) => acc + libro.paginas, 0);
 
     const promedioPaginas = totalPaginas / libros.length;
@@ -36,6 +40,9 @@ export default function ProcesadorDeDatosComplejos() {
 
     return (
         <section className={styles.container}>
+            <button onClick={() => navigate("/")} className={styles.backButton}>
+                Regresar
+            </button>
             <h2 className={styles.heading}>Lista de Libros</h2>
             <ul className={styles.list}>
                 {libros.map((libro, idx) => (

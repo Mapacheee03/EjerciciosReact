@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from './Ejercicio1.1.module.css'
+import { useNavigate } from "react-router-dom";
+
 
 const nombre = "Orlando Grajeda";
 const edad = 21;
@@ -10,6 +12,7 @@ const colorFavorito = "azul";
 
 export default function DatosPersonales() {
   const [fechaActual, setFechaActual] = useState(new Date().toLocaleString());
+  const navigate = useNavigate();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -20,6 +23,9 @@ export default function DatosPersonales() {
 
   return (
     <div className={styles.container}>
+      <button onClick={() => navigate("/")} className={styles.backButton}>
+        Regresar
+      </button>
       <h1 className={styles.titulo} style={{ color: colorFavorito }}>
         Hola, me llamo {nombre}
       </h1>

@@ -1,0 +1,92 @@
+.plataforma {
+    margin: 20svh ;
+    padding: 32px 24px;
+    background: #f8fafc;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 32px;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+.course {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 10px rgba(30,41,59,0.06);
+    margin-bottom: 32px;
+    padding: 24px 20px 18px 20px;
+    transition: box-shadow 0.2s;
+}
+
+.course:hover {
+    box-shadow: 0 6px 24px rgba(30,41,59,0.13);
+}
+
+.instructor {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+
+.progressBar {
+    background: #e0e7ef;
+    border-radius: 8px;
+    height: 14px;
+    margin: 18px 0 16px 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.progressFill {
+    background: linear-gradient(90deg, #38bdf8 0%, #0ea5e9 100%);
+    height: 100%;
+    transition: width 0.3s;
+}
+
+.rating {
+    font-size: 1.3rem;
+    margin: 8px 0 18px 0;
+    user-select: none;
+}
+
+.module {
+    margin-bottom: 18px;
+    background: #f1f5f9;
+    border-radius: 10px;
+    padding: 14px 16px 10px 16px;
+}
+
+.module h4 {
+    margin: 0 0 8px 0;
+    color: #0ea5e9;
+    font-size: 1.08rem;
+    letter-spacing: 0.5px;
+}
+
+.lesson {
+    list-style: none;
+    margin-bottom: 7px;
+}
+
+.lesson label {
+    cursor: pointer;
+    font-size: 1rem;
+    color: #334155;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.lesson input[type="checkbox"] {
+    accent-color: #38bdf8;
+    width: 16px;
+    height: 16px;
+}

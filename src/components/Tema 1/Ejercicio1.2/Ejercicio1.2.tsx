@@ -1,4 +1,6 @@
 import styles from './Ejercicio1.2.module.css'
+import { useNavigate } from "react-router-dom";
+
 
 const fechaNacimiento = new Date(2004, 2, 27) // Recuerda: mes empieza en 0
 const añosExperiencia = 3
@@ -8,12 +10,13 @@ const librosLeidosAño = 5
 const horasEjercicioPorSemana = 3
 
 function calcularEstadisticas() {
+
     const ahora = new Date()
     const msVida = ahora.getTime() - fechaNacimiento.getTime()
     const diasVida = Math.floor(msVida / (1000 * 60 * 60 * 24))
     const horasVida = Math.floor(msVida / (1000 * 60 * 60))
     const minutosVida = Math.floor(msVida / (1000 * 60))
-    
+
     const diasLaborales = añosExperiencia * 5 * 52
     const lineasCodigo = diasLaborales * 100
 
@@ -38,9 +41,13 @@ function calcularEstadisticas() {
 
 export default function CalculadoraPersonal() {
     const stats = calcularEstadisticas()
+    const navigate = useNavigate();
 
     return (
         <div className={styles.container}>
+            <button onClick={() => navigate("/")} className={styles.backButton}>
+                Regresar
+            </button>
             <h2 className={styles.title}>Calculadora Personal</h2>
             <ul className={styles['exercise-list']}>
                 <li className={styles['exercise-item']}>Edad en días: {stats.diasVida}</li>

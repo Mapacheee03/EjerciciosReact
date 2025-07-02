@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+
 import styles from "./Ejercicio1.3.module.css";
 
 const BIRTHDAY_MONTH = 2;
-const BIRTHDAY_DAY = 27; 
+const BIRTHDAY_DAY = 27;
 
 export default function DashboardDinamico() {
     const [now, setNow] = useState(new Date());
@@ -62,6 +64,8 @@ export default function DashboardDinamico() {
         return num < 10 ? "0" + num : num;
     }
 
+    const navigate = useNavigate();
+
     const hours = now.getHours();
     const minutes = now.getMinutes();
     const seconds = now.getSeconds();
@@ -73,6 +77,9 @@ export default function DashboardDinamico() {
 
     return (
         <div className={styles.dashboard}>
+            <button onClick={() => navigate("/")} className={styles.backButton}>
+                Regresar
+            </button>
             <h2 className={styles.title}>Dashboard Dinámico</h2>
             <div className={styles.clock}>
                 <b>Reloj:</b> {formatTime(hours)}:{formatTime(minutes)}:{formatTime(seconds)}
